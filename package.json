@@ -1,0 +1,26 @@
+{
+  "name": "bishwas_webprofile",
+  "version": "1.0.0",
+  "description": "A modern, responsive professional portfolio website showcasing my work as a Power Electronics Researcher and Technical Consultant.",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Viswashhh/Webprofile.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Viswashhh/Webprofile/issues"
+  },
+  "homepage": "https://github.com/Viswashhh/Webprofile#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "node-fetch": "^2.7.0"
+  }
+}

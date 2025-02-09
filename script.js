@@ -37,24 +37,27 @@ window.addEventListener('scroll', () => {
 
 // YouTube Statistics
 async function fetchYouTubeStats() {
-    const channelId = 'UCBJX2JwvsI45r0P27uMUbFw'; // Your channel ID
-    const apiKey = 'AIzaSyDZiV9ExFbc-FtGmdy-byAilAmMy4BkkrQ'; // Your API key
-    const apiUrl = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=${apiKey}`;
-
     try {
-        const response = await fetch(apiUrl);
+        const response = await fetch('/api/youtube-stats');
         const data = await response.json();
-        const stats = data.items[0].statistics;
+        console.log('Frontend received:', data); // Debug log
 
-        // Format numbers with commas
-        const formatNumber = num => new Intl.NumberFormat().format(num);
+        if (data.items && data.items[0] && data.items[0].statistics) {
+            const stats = data.items[0].statistics;
 
-        // Update DOM elements
-        document.getElementById('view-count').textContent = formatNumber(stats.viewCount);
-        document.getElementById('subscriber-count').textContent = formatNumber(stats.subscriberCount);
-        document.getElementById('video-count').textContent = formatNumber(stats.videoCount);
+            // Format numbers with commas
+            const formatNumber = num => new Intl.NumberFormat().format(num);
+
+            // Update DOM elements
+            document.getElementById('view-count').textContent = formatNumber(stats.viewCount);
+            document.getElementById('subscriber-count').textContent = formatNumber(stats.subscriberCount);
+            document.getElementById('video-count').textContent = formatNumber(stats.videoCount);
+        } else {
+            console.error('Unexpected data structure:', data);
+            throw new Error('Invalid data structure');
+        }
     } catch (error) {
-        console.error('Error fetching YouTube stats:', error);
+        console.error('Error in frontend:', error);
         document.getElementById('view-count').textContent = 'N/A';
         document.getElementById('subscriber-count').textContent = 'N/A';
         document.getElementById('video-count').textContent = 'N/A';
