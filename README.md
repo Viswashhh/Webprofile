@@ -1,11 +1,42 @@
-# Newspaper-style-webpage
-A website designed in pattern of a newspaper, is just another eye-catchy things to experience. Customisable fonts (tried to give a newspaper appearance), Animated paper roller- start screen (javascript enabled loading).
+# Bishwas Basnet - Professional Profile
 
-These webpage is under construction, as I have not introduced the responsiveness into it. (Not responsive to all screen size)
+A modern, responsive professional portfolio website showcasing my work as a Power Electronics Researcher and Technical Consultant.
 
-## Setup the project: 
-leave a star⭐ point in github profile and clone or fork the whole project and run into your favorite IDE ( my favorite is VS-CODE and CODE-STUDIO, for android mobile).
-presently runned and edited these project on my android phone using the above editor.
+## Features
 
+- Responsive design that works on all devices
+- Modern UI with smooth animations
+- Real-time YouTube channel statistics
+- Interactive sections for experience, education, and skills
+- Dynamic content loading with AOS (Animate On Scroll)
 
-### Follow my instagram for more such visual demo of the projects : https://instagram.com/web_coded?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D
+## Technologies Used
+
+- HTML5
+- CSS3 (with modern features like CSS Grid, Flexbox)
+- JavaScript (ES6+)
+- YouTube Data API
+- AOS Library for scroll animations
+- Font Awesome for icons
+
+## Setup
+
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/Bishwas_Webprofile.git
+```
+
+2. Open `index.html` in your browser or use a local server
+```bash
+python -m http.server 8000
+```
+
+3. Configure YouTube API
+- Get your YouTube API key from Google Cloud Console
+- Update the API key in `script.js`
+
+## Contact
+
+- LinkedIn: [Bishwas Basnet](https://www.linkedin.com/in/viswashh/)
+- YouTube: [@viswashh](https://www.youtube.com/@viswashh)
+- Email: bishwasbasnet2022@gmail.com

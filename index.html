@@ -3,92 +3,221 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <title>Bishwas Basnet - Power Electronics Researcher</title>
+    <!-- Modern animations and scroll libraries -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="main">
-        <div id="page1">
-            <div id="nav">
-                <h5>Amsterdam, NL</h5>
-                <img src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/5f7f87c8b81a6e7a214312f0_header.svg"
-                    alt="">
-                <i class="ri-menu-3-line"></i>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="hero-image.jpg" alt="Bishwas Basnet">
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-right">
+                <h1>POWER ELECTRONICS RESEARCHER</h1>
+                <h2>Bishwas Basnet</h2>
             </div>
-            <div id="elems">
-                <div id="elem1">
-                    <div id="image-div">
-                        <img src="https://uploads-ssl.webflow.com/5f9085a4041dd5427c5ac8ae/615d9672cc65f12c9ab25f21_thumbnail-small.jpeg?"
-                            alt="">
+            <div class="hero-image" data-aos="fade-left">
+                <img src="hero-image.jpg" alt="Bishwas Basnet - Professional Photo">
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="section-title" data-aos="fade-up">About Me</h2>
+        <div class="about-content">
+            <div class="about-paragraph" data-aos="fade-right">
+                <p>Ever since I was a kid, I've been obsessed with how things work. My first laptop and phone weren't just gadgets—they were gateways to a world of curiosity.</p>
+            </div>
+            
+            <div class="about-paragraph highlight" data-aos="fade-left">
+                <p>I'd tear things apart, much to everyone's dismay, just to see what made them tick. I still remember lingering at a radio repair shop, fascinated by the tiny PCB boards and capacitors, firing off questions the mechanic probably couldn't answer.</p>
+            </div>
+            
+            <div class="about-paragraph" data-aos="fade-right">
+                <p>That relentless curiosity never left me. Today, I channel that same energy into teaching power electronics, leading EV repair, and collaborating on global projects.</p>
+            </div>
+            
+            <div class="about-paragraph highlight" data-aos="fade-left">
+                <p>I'm still that kid with too many hobbies and not enough time, but now I get to share what I've learned along the way. My journey isn't just about tech—it's about chasing the thrill of discovery and turning it into something meaningful.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2 class="section-title" data-aos="fade-up">Experience</h2>
+        <div class="timeline" data-aos="fade-up">
+            <div class="timeline-item">
+                <h3>Doctoral Researcher</h3>
+                <p>Tampere University</p>
+                <span>May 2024 - Present</span>
+                <ul>
+                    <li>Research focus on galvanically isolated DC-DC converters and silicon-carbide devices</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>Research Fellow</h3>
+                <p>Coalition for Disaster Resilient Infrastructure (CDRI)</p>
+                <span>May 2024 - Present</span>
+                <ul>
+                    <li>Project development and implementation for sustainable infrastructure</li>
+                    <li>Working on second life battery testing and product development</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>Visiting Faculty</h3>
+                <p>Tribhuvan University & Westcliff University</p>
+                <span>Mar 2023 - Apr 2024</span>
+                <ul>
+                    <li>Lecture series on Advanced Power Electronics</li>
+                    <li>Lecture series on Electrical Machine Design Simulations</li>
+                    <li>Lecture series on Basic Electrical Engineering & Utilization of Electrical Energy</li>
+                    <li>Numerical Methods</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>Assistant Manager (Repair & Maintenance Department)</h3>
+                <p>Thee Go (Future Green Energy)</p>
+                <span>Aug 2023 - Apr 2024</span>
+                <ul>
+                    <li>Help electric vehicle service team with product development and maintenance</li>
+                    <li>Management & mobilization of technical resources for after-sales services</li>
+                    <li>Aid company in establishing new product portfolio through R&M feedback</li>
+                    <li>Provide in-house trainings for technical & non-technical resources</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>Product Development Engineer</h3>
+                <p>Ebolt Mobility</p>
+                <span>Sep 2021 - Jul 2023</span>
+                <ul>
+                    <li>Led team of four engineers to build BMS & power systems for electric two-wheeler</li>
+                    <li>Assisted in R&D with multiple teams - running live projects with industry standards</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <h2 class="section-title" data-aos="fade-up">Education</h2>
+        <div class="education-items" data-aos="fade-up">
+            <div class="education-item">
+                <h3>Doctoral Researcher in Electrical Engineering</h3>
+                <p>Tampere University, Finland</p>
+                <span>May 2024 - Present</span>
+            </div>
+            <div class="education-item">
+                <h3>Master's degree in Electrical Engineering (Power Electronics)</h3>
+                <p>IIT BHU (Indian Institute of Technology, Varanasi)</p>
+                <span>Jul 2019 - Aug 2021</span>
+            </div>
+            <div class="education-item">
+                <h3>Bachelor's in Electrical Engineering</h3>
+                <p>Tribhuvan University- Kathmandu Engineering College</p>
+                <span>Jun 2013 - Jun 2017</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2 class="section-title" data-aos="fade-up">Skills & Expertise</h2>
+        <div class="skills-grid" data-aos="fade-up">
+            <div class="skill-category">
+                <h3>Tools</h3>
+                <ul>
+                    <li>Ansys Maxwell</li>
+                    <li>Ansys Q3D</li>
+                    <li>Ansys Icepack</li>
+                    <li>Matlab</li>
+                    <li>Simulink</li>
+                    <li>LTspice</li>
+                    <li>Imperix</li>
+                    <li>NIDAQ</li>
+                    <li>TI DSP</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Expertise</h3>
+                <ul>
+                    <li>Academic Research</li>
+                    <li>Project Management</li>
+                    <li>Technical Consulting</li>
+                    <li>Product Development</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Development Skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Latex</li>
+                    <li>Python</li>
+                    <li>Youtube Content</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="badge" class="badge">
+        <h2 class="section-title" data-aos="fade-up">Badge of Honor</h2>
+        <div class="badge-content" data-aos="fade-up">
+            <div class="youtube-stats">
+                <div class="youtube-icon">
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <h3 id="view-count">Loading...</h3>
+                        <p>Total Views</p>
                     </div>
-                    <h4>AVRO | KO <span>NEW</span></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, odio saepe rerum dolorem
-                        necessitatibus nam id exercitationem nobis nisi optio?</p>
-                </div>
-                <div id="elem2">
-                    <h2>All Work!</h2>
-                    <h3>A Featured selection <br>the latest work- <br>of the last years.</h3>
-                    <h6>Tip! Drag sideways to navigate</h6>
-                </div>
-                <div id="elem3">
-                    <div id="image-div">
-                        <img src="https://uploads-ssl.webflow.com/5f9085a4041dd5427c5ac8ae/645b5439577bd35377de8c43_thumbnail-small.webp?"
-                            alt="">
+                    <div class="stat-item">
+                        <h3 id="subscriber-count">Loading...</h3>
+                        <p>Subscribers</p>
                     </div>
-                    <h4>The roger hub <span>NEW</span></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, odio saepe rerum dolorem
-                        necessitatibus nam id exercitationem nobis nisi optio?</p>
+                    <div class="stat-item">
+                        <h3 id="video-count">Loading...</h3>
+                        <p>Videos</p>
+                    </div>
                 </div>
+                <a href="https://www.youtube.com/@viswashh" target="_blank" class="youtube-link">
+                    Visit Channel <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
-            </div>
-            <h1>MIRANDA</h1>
-        </div>
-        <div id="page2">
-            <div id="page2-left">
-                <h2>Interative <span>artist!</span></h2>
-                <img src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/605c6ce3bc0c7d1cd4ca847e_avatar-star-p-800.jpeg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod doloremque, accusamus nam ipsa asperiores soluta amet nisi veritatis mollitia dolorum est deserunt quidem assumenda enim tempore quia fuga eaque eum.</p>
-            </div>
-            <div id="page2-right">
-                <img src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/605c62f4c78c4ba46a1268be_avatar-1-p-2000.jpeg" alt="">
-                <h1>Digital Art Director Interative Designer Creative developer based in amsterdam, NL.</h1>
+    <section id="contact" class="contact">
+        <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+        <div class="contact-content" data-aos="fade-up">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/viswashh/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:bishwasbasnet2022@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
-        <div id="page3">
-            <h1>Website</h1>
-            <img src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/60474834660f934090d42877_stamp.png" alt="">
-        </div>
-        <div id="page4">
-            <div id="page4-left">
-                <img src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/605c679f33f67d3dd00b04b4_avatar-3.jpeg" alt="">
-            </div>
-            <div id="page4-right">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, obcaecati. Ut tempora doloribus consequatur odio perspiciatis neque minima sapiente delectus. <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ducimus exercitationem tenetur minima, nihil reprehenderit sapiente consequatur laboriosam quae cupiditate velit impedit eum quisquam excepturi.</p>
-                <div id="anda">
-                    <img src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/61001a3509319b6ae39e156b_arrow-long.svg" alt="">
-                    <h1>All Work</h1>
-                </div>
-            </div>
-        </div>
-        <div id="page5">
-            <h1>Let's create something together <span>Email me</span></h1>
-            <h1>Let's create something together <span>Email me</span></h1>
-            <h1>Let's create something together <span>Email me</span></h1>
+    </section>
 
-        </div>
-        <div id="page6">
-
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
-        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 
