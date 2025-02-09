@@ -6,8 +6,13 @@ const path = require('path');
 dotenv.config();
 const app = express();
 
-// Serve static files
-app.use(express.static(path.join(__dirname)));
+// Serve static files from the root directory
+app.use(express.static(__dirname));
+
+// Serve index.html for the root route
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
 
 // API endpoint to fetch YouTube stats
 app.get('/api/youtube-stats', async (req, res) => {
@@ -31,6 +36,11 @@ app.get('/api/youtube-stats', async (req, res) => {
         console.error('Detailed Error:', error);
         res.status(500).json({ error: 'Failed to fetch YouTube stats', details: error.message });
     }
+});
+
+// Handle all other routes by serving index.html
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 const PORT = process.env.PORT || 3000;
