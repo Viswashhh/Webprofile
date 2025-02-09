@@ -6,8 +6,9 @@ const path = require('path');
 dotenv.config();
 const app = express();
 
-// Serve static files from the root directory
+// Serve static files from root and public directory
 app.use(express.static(__dirname));
+app.use('/public', express.static(path.join(__dirname, 'public')));
 
 // Serve index.html for the root route
 app.get('/', (req, res) => {
